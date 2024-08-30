@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12ca820d9f33f739b9172ae14999c3e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_12ca820d9f33f739b9172ae14999c3e8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_12ca820d9f33f739b9172ae14999c3e8 = L.map(
+                "map_12ca820d9f33f739b9172ae14999c3e8",
+                {
+                    center: [40.43798816666666, -75.73018479166666],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_add3ed5cac1e6243fa09612cab31eddf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_add3ed5cac1e6243fa09612cab31eddf.addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var poly_line_22fba86c71f2f479115d181d58977aea = L.polyline(
+                [[41.203322, -77.194525], [41.203322, -77.194525]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_03b5e690b744a40d2e41f027116ef858 = L.marker(
+                [41.203322, -77.194525],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_03b5e690b744a40d2e41f027116ef858.bindTooltip(
+                `<div>
+                     Pipeline: LMBE North A, Origin: LMBE North A, Destination: LMBE North B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9d34259c3ae03405f8debb5351f5e41 = L.marker(
+                [41.203322, -77.194525],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_d9d34259c3ae03405f8debb5351f5e41.bindTooltip(
+                `<div>
+                     Pipeline: LMBE North A, Origin: LMBE North A, Destination: LMBE North B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9221bc0e8e78f068d16d5ed48791a1e9 = L.polyline(
+                [[41.203322, -77.194525], [41.203322, -77.194525]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_83cf87f28ee03c6e6d22b52d2d4fddec = L.marker(
+                [41.203322, -77.194525],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_83cf87f28ee03c6e6d22b52d2d4fddec.bindTooltip(
+                `<div>
+                     Pipeline: LMBE North B, Origin: LMBE North B, Destination: MCSES North A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16a03b3def6485ada8f558550ffca771 = L.marker(
+                [41.203322, -77.194525],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_16a03b3def6485ada8f558550ffca771.bindTooltip(
+                `<div>
+                     Pipeline: LMBE North B, Origin: LMBE North B, Destination: MCSES North A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f75a9666d39ae5653580a8ef6e91e2b5 = L.polyline(
+                [[41.203322, -77.194525], [40.763429, -75.19757]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_1d121325e59269b0a6350ab5b84bb3dd = L.marker(
+                [41.203322, -77.194525],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_1d121325e59269b0a6350ab5b84bb3dd.bindTooltip(
+                `<div>
+                     Pipeline: MCSES North A, Origin: MCSES North A, Destination: Transco Lower Mud Run North A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6b0cc3645bb70f95babc557961cef91 = L.marker(
+                [40.763429, -75.19757],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_c6b0cc3645bb70f95babc557961cef91.bindTooltip(
+                `<div>
+                     Pipeline: MCSES North A, Origin: MCSES North A, Destination: Transco Lower Mud Run North A
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4a975fbb25e6cdd0450043a6bf8cca30 = L.polyline(
+                [[40.763429, -75.19757], [40.763429, -75.19757]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_7356933afc4251efbb158f619915136e = L.marker(
+                [40.763429, -75.19757],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_7356933afc4251efbb158f619915136e.bindTooltip(
+                `<div>
+                     Pipeline: Transco Lower Mud Run North A, Origin: Transco Lower Mud Run North A, Destination: Transco Lower Mud Run North B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21afeb21132b68ce05d6cac7c8049684 = L.marker(
+                [40.763429, -75.19757],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_21afeb21132b68ce05d6cac7c8049684.bindTooltip(
+                `<div>
+                     Pipeline: Transco Lower Mud Run North A, Origin: Transco Lower Mud Run North A, Destination: Transco Lower Mud Run North B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5401eba50c19f4d6b6bce224257a93c5 = L.polyline(
+                [[40.763429, -75.19757], [40.91593, -75.43935]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_440ee28b06d324e72c0b68bc90186988 = L.marker(
+                [40.763429, -75.19757],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_440ee28b06d324e72c0b68bc90186988.bindTooltip(
+                `<div>
+                     Pipeline: Transco Lower Mud Run North B, Origin: Transco Lower Mud Run North B, Destination: Col-Gilbert
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95e98a1b33dec0720edc0a14a78dd301 = L.marker(
+                [40.91593, -75.43935],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_95e98a1b33dec0720edc0a14a78dd301.bindTooltip(
+                `<div>
+                     Pipeline: Transco Lower Mud Run North B, Origin: Transco Lower Mud Run North B, Destination: Col-Gilbert
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3215e2330d6abccb48bf39103a6e7136 = L.polyline(
+                [[40.91593, -75.43935], [40.4108, -75.24791]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_0da5aba7288f9f25480fe28e88b317ff = L.marker(
+                [40.91593, -75.43935],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_0da5aba7288f9f25480fe28e88b317ff.bindTooltip(
+                `<div>
+                     Pipeline: Col-Gilbert, Origin: Col-Gilbert, Destination: TM-North A Transfer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3ec5984c1be027ff6e8985c1d4f1d2c = L.marker(
+                [40.4108, -75.24791],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_d3ec5984c1be027ff6e8985c1d4f1d2c.bindTooltip(
+                `<div>
+                     Pipeline: Col-Gilbert, Origin: Col-Gilbert, Destination: TM-North A Transfer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7a9a7549fca78d7ba43aeea150eca182 = L.polyline(
+                [[40.4108, -75.24791], [40.44177, -75.34157]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_3131882811ebeb6d113ad4510b8bc5e8 = L.marker(
+                [40.4108, -75.24791],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_3131882811ebeb6d113ad4510b8bc5e8.bindTooltip(
+                `<div>
+                     Pipeline: TM-North A Transfer, Origin: TM-North A Transfer, Destination: Tetco QuakerTown
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db19369b476fb89fd7a9d1024a41d15d = L.marker(
+                [40.44177, -75.34157],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_db19369b476fb89fd7a9d1024a41d15d.bindTooltip(
+                `<div>
+                     Pipeline: TM-North A Transfer, Origin: TM-North A Transfer, Destination: Tetco QuakerTown
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6efe4f0119fab0f9e9442775429bb1f1 = L.polyline(
+                [[40.44177, -75.34157], [40.37448, -75.35288]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_cd7db467c56bdcfba1a41904198f6973 = L.marker(
+                [40.44177, -75.34157],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_cd7db467c56bdcfba1a41904198f6973.bindTooltip(
+                `<div>
+                     Pipeline: Tetco QuakerTown, Origin: Tetco QuakerTown, Destination: Tetco West Rockhill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e44ea75038e2cc694b48f75e163d033e = L.marker(
+                [40.37448, -75.35288],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_e44ea75038e2cc694b48f75e163d033e.bindTooltip(
+                `<div>
+                     Pipeline: Tetco QuakerTown, Origin: Tetco QuakerTown, Destination: Tetco West Rockhill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_db55a30f40aa43abc821a98aac3008cc = L.polyline(
+                [[40.37448, -75.35288], [40.4108, -75.24791]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_f4ecb2798cdd4b79322de1bc6b13f4c0 = L.marker(
+                [40.37448, -75.35288],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_f4ecb2798cdd4b79322de1bc6b13f4c0.bindTooltip(
+                `<div>
+                     Pipeline: Tetco West Rockhill, Origin: Tetco West Rockhill, Destination: TM-South Transfer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50b1363e878fb66f36bdfde6716d3dc9 = L.marker(
+                [40.4108, -75.24791],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_50b1363e878fb66f36bdfde6716d3dc9.bindTooltip(
+                `<div>
+                     Pipeline: Tetco West Rockhill, Origin: Tetco West Rockhill, Destination: TM-South Transfer
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1d4bda4a8ce89eb594a3741edb40f2c4 = L.polyline(
+                [[40.4108, -75.24791], [39.80067, -75.45964]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_b37bd6cdb25b08653babe239a2f0c80f = L.marker(
+                [40.4108, -75.24791],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_b37bd6cdb25b08653babe239a2f0c80f.bindTooltip(
+                `<div>
+                     Pipeline: TM-South Transfer, Origin: TM-South Transfer, Destination: Col-Claymont
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3b35906b5c814a4511d5cfe2991554e = L.marker(
+                [39.80067, -75.45964],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_f3b35906b5c814a4511d5cfe2991554e.bindTooltip(
+                `<div>
+                     Pipeline: TM-South Transfer, Origin: TM-South Transfer, Destination: Col-Claymont
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_04180a6eb9ecb982171b4d8f01bdc529 = L.polyline(
+                [[39.80067, -75.45964], [38.91083, -75.52767]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_19e9b83eacfc02318826b67b72a5097e = L.marker(
+                [39.80067, -75.45964],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_19e9b83eacfc02318826b67b72a5097e.bindTooltip(
+                `<div>
+                     Pipeline: Col-Claymont, Origin: Col-Claymont, Destination: Transco Ridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33de67224f9af1ba47e8384093e76ae5 = L.marker(
+                [38.91083, -75.52767],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_33de67224f9af1ba47e8384093e76ae5.bindTooltip(
+                `<div>
+                     Pipeline: Col-Claymont, Origin: Col-Claymont, Destination: Transco Ridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e3c16b07e5f4fbdca7379fff0f9e24d9 = L.polyline(
+                [[38.91083, -75.52767], [38.91083, -75.52767]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            var marker_bd9a6e8e124dd66796f5e31c99fa68e3 = L.marker(
+                [38.91083, -75.52767],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_bd9a6e8e124dd66796f5e31c99fa68e3.bindTooltip(
+                `<div>
+                     Pipeline: Transco Ridge, Origin: Transco Ridge, Destination: Transco Ridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e2c1ea39cbdcc8f258d41d9393705a5 = L.marker(
+                [38.91083, -75.52767],
+                {}
+            ).addTo(map_12ca820d9f33f739b9172ae14999c3e8);
+        
+    
+            marker_9e2c1ea39cbdcc8f258d41d9393705a5.bindTooltip(
+                `<div>
+                     Pipeline: Transco Ridge, Origin: Transco Ridge, Destination: Transco Ridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
